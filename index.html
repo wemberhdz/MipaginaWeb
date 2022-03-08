@@ -5,50 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina Web</title>
+
+    <style>
+    #header {
+        border: 5px solid brown;
+        background-color: beige;
+    }
+
+    #sidebar{
+        border: 7px ;
+        text-align: center;
+        float: left ;
+        background-color: beige;
+        height: 278px;
+
+    }
+
+    #content{
+        border: 7px;
+        float: left;
+        background-color: beige;
+        
+    }
+
+    #footer{
+        border: solid brown;
+        text-align: center;
+        background-color: beige;
+        width: 100%;
+    }
+
+
+    #sidebar, #content, body, html {
+            margin: 0;
+            padding: 0;
+            
+     }
+
+    .left{
+            border: 7px;
+            width: 49%;
+            float: left;
+            
+    }
+
+    #container:after{
+            clear: left;
+        }
+
+    .sistemas{
+
+        width: 120x;
+        height: 120px;
+    }
+
+</style>
 </head>
 <body bgcolor="beige">
- <table>
 
-<tr>
-<td><img src="yo.jpg" alt="una foto mia"></td>
-<td>
-    <h1><p><strong>Wember Hernandez</strong><br></h1>
-    <h1><strong>Estudiante Unversitario</strong><br></h1>
-    <h1><strong>Departamento de ingenieria y arquitectura</strong><br></h1>
-    <h3><strong>Universidad de El Salvador, Facultad Multidisciplinaria Oriental</strong><br></h3>
-    <h4>Estudiante en <a href="http://secretariageneral.ues.edu.sv/index.php?option=com_content&view=article&id=60&Itemid=94">Sistemas Informaticos</a>, 2022</h4>
+<div id = "header" >
+    
+<table>
+    <tr>
+        <td><img src="yo.jpg" alt="una foto mia"></td>
+        <td>
+            <h1><p><strong>Wember Hernandez</strong><br></h1>
+            <h1><strong>Estudiante Unversitario</strong><br></h1>
+            <h1><strong>Departamento de ingenieria y arquitectura</strong><br></h1>
+            <h3><strong>Universidad de El Salvador, Facultad Multidisciplinaria Oriental</strong><br></h3>
+            <h4>Estudiante en <a href="http://secretariageneral.ues.edu.sv/index.php?option=com_content&view=article&id=60&Itemid=94">Sistemas Informaticos</a>, 2022</h4>
+    </table>        
+</div>
 
-     <ul>
-         <li>Futbol</li>
-         <li>Video Juegos</li>
-         <li>Programacion</li>
-         <li>Osu!</li>
-
-</ul>   
-</p>
-</td>
-</table>
-
-<hr>Transcursando la Universidad, en la carrera de Ingeneria de Sistemas. <a href="https://github.com/wemberhdz">Mi perfil</a> describe 
-perfectamente mis intereses.
-<hr>
-Un video random que encontre por ahi <a href="https://www.instagram.com/reel/CZdFLXpF9Rg/?utm_source=ig_web_copy_link">Click aqui</a>
-<hr>
-
-<P>Algunas de mis citas favoritas</P>
-<cite>Asta</cite>
-<blockquote>"No tienes nada especial, y eso es lo que te hace especial"</blockquote>
-<cite>Aristóteles</cite>
-<blockquote>"El sabio no dice nunca todo lo que piensa, pero siempre piensa todo lo que dice"</blockquote>
-<hr>
-<h3><strong>INFORMACION DE CONTANCTO</strong></h3>
-Email: <br>
-<a href="hm20005@ues.edu.sv">hm20005@ues.edu.sv</a>
-<p>E.s Mail: <br>
-Km. 144, Carretera al Cuco,<br> 
-Cantón El Jute, <br>
-San Miguel, El Salvador 
-</p>
+<div id = "container">
+    <div id = "sidebar" class = "left">
+        <H3>Mis aficiones/interes:</H3>
+        <table>
+        <ul>
+            <tr>
+            <li>Futbol/Deportes</li>
+            <li>Videojuegos</li>
+            <li>Programacion</li>
+            <li>Salimer de la u</li>
+            </tr>
+            <img class = "sistemas" src="sistemas.png" alt="una foto mia">
+    </ul> 
+    </table>
+    </div>
+        <div id = "content" class = "left">
+    
+            <hr>Transcursando la Universidad, en la carrera de Ingeneria de Sistemas. <a href="https://github.com/wemberhdz">Mi perfil</a> describe 
+            perfectamente mis intereses.
+            <hr>
+            Mi sitio web <a href="Google.com">"Click aqui"</a>
+            <hr>
+            
+            <P>Algunas de mis citas favoritas</P>
+            <cite>Asta</cite>
+            <blockquote>"No tienes nada especial, y eso es lo que te hace especial"</blockquote>
+            <cite>Aristóteles</cite>
+            <blockquote>"El sabio no dice nunca todo lo que piensa, pero siempre piensa todo lo que dice"</blockquote>
+            <hr>
+    </div>
+    
+        <div id = "footer" class = "left" > 
+    
+            <h3><strong>INFORMACION DE CONTANCTO</strong></h3>
+            Email: <br>
+            <a href="hm20005@ues.edu.sv">hm20005@ues.edu.sv</a>
+            <p>E.s Mail: <br>
+            Km. 144, Carretera al Cuco,<br> 
+            Cantón El Jute, <br>
+            San Miguel, El Salvador
+            </p>
+</div>
+</div>
 
 </body>
 </html>
